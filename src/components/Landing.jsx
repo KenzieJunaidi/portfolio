@@ -58,14 +58,18 @@ export const Landing = () => {
                             {`const aboutMe: DeveloperProfile = {
         codename: "KenzieJunaidi",
         origin: "Indonesia",
-        role: "Future AI Engineer",
+        role: "Computer Science Undergraduate | Future AI Engineer",
         stack: {
-            languages: ["Python", "JavaScript", "C"],
-            frameworks: ["React", "TensorFlow", "PyTorch"],
+            languages: ["Python", "JavaScript", "C", "HTML", "CSS"],
+            frameworks: ["React", "TensorFlow", "PyTorch", "Flask"],
+            tools: ["VS Code", "Github", "Google Colab"]
         },
         traits: [
+            "Proactive",
+            "Detail-Oriented",
             "Team Player",
             "Adaptable",
+            "Leadership Experience",
             "Eager to Learn",
         ],
         quote:
