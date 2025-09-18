@@ -2,6 +2,20 @@ import { motion } from "framer-motion";
 import { useState } from 'react';
 import emailjs from "@emailjs/browser";
 
+const FadeInUp = {
+        initial: {opacity: 0, y: 20},
+        animate: {opacity: 1, y: 0},
+        transition: {duration: 0.6},
+        };
+
+    const staggerContainer = {
+        animate: {
+            transition: {
+                staggerChildren: 0.1,
+            },
+        },
+    };
+
 export const Contact = () => {
 
     const [formData, setFormData] = useState({
@@ -71,19 +85,6 @@ export const Contact = () => {
         }
     };
 
-    const FadeInUp = {
-        initial: {opacity: 0, y: 20},
-        animate: {opacity: 1, y: 0},
-        transition: {duration: 0.6},
-        };
-
-    const staggerContainer = {
-        animate: {
-            transition: {
-                staggerChildren: 0.1,
-            },
-        },
-    };
     return (
         <motion.section id="contact" className="contact" initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{once: true}} transition={{duration: 0.6}}>
             <motion.h2 variants={FadeInUp} initial="initial" animate="animate" viewport={{once: true}}>
