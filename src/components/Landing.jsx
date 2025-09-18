@@ -35,7 +35,7 @@ export const Landing = () => {
                     </motion.p>
 
                     <motion.div className="my-buttons" variants={staggerContainer}>
-                        <motion.a href="https://drive.google.com/file/d/1X-oKeG8A9K3pO1smnhGdm7VMFPP6iMxq/view?usp=sharing" target="_blank" className="primary-button" whileHover={{scale:1.05}} whileTap={{scale:0.95}}>Download CV</motion.a>
+                        <motion.a href="https://drive.google.com/file/d/1NdBrIjzDCu5d-s3aZeuXOvH2TwZH9cej/view?usp=sharing" target="_blank" className="primary-button" whileHover={{scale:1.05}} whileTap={{scale:0.95}}>Download CV</motion.a>
                         <motion.a href="#contact" className="secondary-button" whileHover={{scale:1.05}} whileTap={{scale:0.95}}>Contact Me</motion.a>
                     </motion.div>
 
