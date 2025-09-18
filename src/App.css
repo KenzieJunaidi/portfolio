@@ -389,6 +389,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 580px;
 }
 
 .project-card::before {
@@ -450,6 +451,25 @@ body {
   padding: 0 1.5rem 1rem;
   color: var(--light-text);
   flex-grow: 1;
+}
+
+.link-btn {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 11;
+  
+  right: 0%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .link-btn {
+  opacity: 1;
 }
 
 .project-tech {
