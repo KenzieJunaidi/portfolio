@@ -96,7 +96,7 @@ export const Contact = () => {
             </motion.div>
 
             <motion.h2 className="section-title" variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
-                Contact Me
+                Get In Touch
             </motion.h2>
 
             <motion.h5 className="section-subtitle" style={{ marginBottom: "3rem" }} variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
