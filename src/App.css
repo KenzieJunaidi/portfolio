@@ -796,7 +796,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
   padding: 0 1rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .skill-card {
@@ -808,6 +808,15 @@ body {
   padding: 20px;
   color: #fff; 
   max-width: 300px;
+
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--accent-color);
 }
 
 .skill-card h5 {
