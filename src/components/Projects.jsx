@@ -24,10 +24,6 @@ export const Projects = () => {
         setActive(name);
     }
 
-    useEffect(() => {
-        console.log(active);
-    }, [active])
-
     const projects = [
         {
             id: 1,

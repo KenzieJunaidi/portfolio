@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 
 const FadeInUp = {
     initial: {opacity: 0, y: 20},
@@ -23,14 +24,17 @@ export const Navbar = () => {
             </motion.div> */}
 
             <motion.ul className="nav-links" variants={staggerContainer} initial="initial" animate="animate">                
-                <motion.li variants={FadeInUp} whileHover={{scale: 1.1}} whileTap={{scale: 0.95}}>
-                    <a href="#landing">Home</a>
+                <motion.li variants={FadeInUp} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                <Link to="/#landing">Home</Link>
+                    </motion.li>
+                <motion.li variants={FadeInUp} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                    <Link to="/#projects">Projects</Link>
                 </motion.li>
-                <motion.li variants={FadeInUp} whileHover={{scale: 1.1}} whileTap={{scale: 0.95}}>
-                    <a href="#projects">Projects</a>
+                <motion.li variants={FadeInUp} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                    <Link to="/#contact">Contact</Link>
                 </motion.li>
-                <motion.li variants={FadeInUp} whileHover={{scale: 1.1}} whileTap={{scale: 0.95}}>
-                    <a href="#contact">Contact</a>
+                <motion.li variants={FadeInUp} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                    <Link to="/profile">Profile</Link>
                 </motion.li>
             </motion.ul>
         </motion.nav>
