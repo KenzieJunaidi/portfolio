@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Prism as SyntaxHighlight } from "react-syntax-highlighter"; 
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Rain } from "./Rain/Rain";
 
 const FadeInUp = {
     initial: {opacity: 0, y: 20},
@@ -19,12 +20,13 @@ const staggerContainer = {
 export const Landing = () => {
     return (
         <motion.section id="landing" className="landing" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.8, delay: 0.2}}>
+            <Rain />
             <div className="landing-container" variants={staggerContainer} initial="initial" animate="animate">
                 <motion.div className="landing-content">
                     <motion.div className="landing-badge">
                         <span>👋 Hello, I'm</span>
                     </motion.div>
-                    <motion.h1 className="glow" whileHover={{scale: 1.05}}>
+                    <motion.h1 className="glow" whileHover={{scale: 1.05, textShadow: "0 0 10px rgba(255, 255, 255, 0.6)"}}>
                         Kenzie Junaidi
                     </motion.h1>
                     <motion.h2 className="subtitle">
@@ -51,10 +53,10 @@ export const Landing = () => {
                         </motion.a>
                     </motion.div>
                 </motion.div>
-
+            
                 <motion.div className="code-container" initial={{opacity: 0, x: 50}} animate={{opacity: 1, x: 0}} transition={{duration: 0.8, delay: 0.4}}>
                     <div className="code-display">
-                        <SyntaxHighlight language="javascript" customStyle={{margin: 0, padding: "2rem", height: "100%", borderRadius: "20px", opacity: "0.9", backdropFilter: "blur(10px)", marginBottom: "50px"}} style={vscDarkPlus}>
+                        <SyntaxHighlight language="javascript" customStyle={{margin: 0, padding: "2rem", height: "100%", borderRadius: "20px", opacity: "0.95", marginBottom: "50px", animation: "glow-pulse 2s infinite"}} style={vscDarkPlus}>
                             {`const aboutMe: DeveloperProfile = {
         codename: "KenzieJunaidi",
         origin: "Indonesia",

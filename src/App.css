@@ -106,13 +106,38 @@ body {
 /* Landing Page */
 .landing {
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  background: url("/background.png") center/cover no-repeat;
+  /* background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%); */
+  
   
   position: relative;
   display: flex;
   align-items: center;
   padding: 0 5%;
   overflow: hidden;
+}
+
+/* Glass Overlay */
+.landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* backdrop-filter: blur(1px); */
+  z-index: 1;
+}
+
+.landing::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 70%, #0f172a 100%);
+  z-index: 2;
+}
+
+.landing > * {
+  position: relative;
+  z-index: 3;
 }
 
 .landing-container {
@@ -225,10 +250,20 @@ body {
   flex: 1;
   position: relative;
   max-width: 600px;
+  z-index: 2;
 }
 
 .code-display {
   width: 100%;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(96, 165, 250, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.6);
+  }
 }
 
 /* Landing Media Queries */
@@ -378,6 +413,7 @@ body {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  place-items: center;
 }
 
 .project-card {
