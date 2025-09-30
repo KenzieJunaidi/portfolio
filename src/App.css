@@ -655,7 +655,39 @@ body {
 
 /* Footer */
 .footer {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 10%;
   border-top: 1px solid var(--card-border);
+  color: var(--fade-text);
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.socials-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.2rem;
+  text-decoration: none;
+  color: var(--fade-text);
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.socials-container a:hover {
+  transform: translateY(-3px); 
+}
+
+@media (max-width: 850px){
+  .footer {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
 }
