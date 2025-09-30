@@ -87,9 +87,21 @@ export const Contact = () => {
 
     return (
         <motion.section id="contact" className="contact" initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{once: true}} transition={{duration: 0.6}}>
-            <motion.h2 variants={FadeInUp} initial="initial" animate="animate" viewport={{once: true}}>
+            {/* <motion.h2 variants={FadeInUp} initial="initial" animate="animate" viewport={{once: true}}>
                 Connect with Me
+            </motion.h2> */}
+
+            <motion.div className="header-container" variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
+                <h5 className="section-title-header">LET'S CONNECT</h5>
+            </motion.div>
+
+            <motion.h2 className="section-title" variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
+                Contact Me
             </motion.h2>
+
+            <motion.h5 className="section-subtitle" style={{ marginBottom: "3rem" }} variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
+                Thanks for visiting! I enjoy connecting with developers, collaborators, and AI enthusiasts. Have a project or idea? Reach out via email or the links below, and I would be glad to hear from you!
+            </motion.h5>
 
             <motion.div className="contact-content" variants={FadeInUp}>
                 <motion.form className="contact-form" onSubmit={handleSubmit}>

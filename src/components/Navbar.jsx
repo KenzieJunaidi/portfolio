@@ -18,9 +18,9 @@ const staggerContainer = {
 export const Navbar = () => {
     return (
         <motion.nav className="navbar" initial={{y: -100}} animate={{y: 0}} transition={{duration: 0.6, ease: "easeOut"}}>
-            <motion.div className="title">
+            {/* <motion.div className="title">
                 Portfolio
-            </motion.div>
+            </motion.div> */}
 
             <motion.ul className="nav-links" variants={staggerContainer} initial="initial" animate="animate">                
                 <motion.li variants={FadeInUp} whileHover={{scale: 1.1}} whileTap={{scale: 0.95}}>

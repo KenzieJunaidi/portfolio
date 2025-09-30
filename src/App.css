@@ -30,15 +30,13 @@ body {
 
 .app {
   opacity: 0; /*Loading Transition*/
-  transform: translateY(20px);
-  transition: opacity 0.3s ease-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-out;
   width: 100%;
   min-height: 100vh;
 }
 
 .app.loaded {
   opacity: 1;
-  transform: translateY(0);
 }
 
 /* Navbar */
@@ -49,10 +47,10 @@ body {
   right: 0;
 
   display: flex;
-  justify-content: space-between;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   padding: 1.5rem 5%;
-  background-color: var(--nav-bg);
+  /* background-color: var(--nav-bg); */
   backdrop-filter: blur(10px);
   z-index: 100;
 
@@ -69,7 +67,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   list-style: none;
 }
 
@@ -566,7 +564,6 @@ body {
 .contact h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
 }
 
 .contact-content {
