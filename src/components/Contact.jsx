@@ -88,7 +88,7 @@ export const Contact = () => {
     return (
         <motion.section id="contact" className="contact" initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{once: true}} transition={{duration: 0.6}}>
             <motion.h2 variants={FadeInUp} initial="initial" animate="animate" viewport={{once: true}}>
-                Get in Touch
+                Connect with Me
             </motion.h2>
 
             <motion.div className="contact-content" variants={FadeInUp}>
