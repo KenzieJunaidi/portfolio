@@ -14,8 +14,36 @@ import { ScrollToHash } from './components/ScrollToHash';
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
+  // Wait for images to load
   useEffect(() => {
-    setIsLoaded(true);
+    setIsLoaded(false);
+
+    let img;
+    if(location.pathname === "/"){
+      img = new Image();
+      img.src = '/background.png';
+    }
+    else if(location.pathname === "/profile"){
+      img = new Image();
+      img.src = './photo.jpg'
+    }
+
+    if(img){
+      if(img.complete){
+        setIsLoaded(true);
+      }
+      else{
+        img.onload = () => setIsLoaded(true);
+        img.onerror = () => setIsLoaded(true);
+      }
+    }
+
+    else{
+      setIsLoaded(true);
+    }
+  }, []);
+
+  useEffect(() => {
     emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
   }, []);
 

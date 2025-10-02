@@ -849,6 +849,8 @@ body {
   border-radius: 5px;
   margin-bottom: 0.8rem;
   background-color: blue;
+
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .skill-icon i {
