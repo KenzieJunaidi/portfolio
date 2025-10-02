@@ -101,7 +101,7 @@ export const Profile = () => {
                 </motion.div>
             </motion.div>
 
-            {/* <motion.div className="header-container" style={{ marginTop: '6rem' }} variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
+            <motion.div className="header-container" style={{ marginTop: '6rem' }} variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
                 <h5 className="section-title-header">PROFESSIONAL & ORGANIZATIONAL</h5>
             </motion.div>
             <motion.h2 className="section-title" variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
@@ -111,10 +111,13 @@ export const Profile = () => {
             <motion.div className="experience-container">
                 <motion.div className="exp">
                     <motion.div className="exp-header">
-                        <div>
+                        <div className="header-wrapper">
                             <h3>Sales Manager</h3>
-                            <h5 style={{ fontWeight: '700' }}>Mulai · <span style={{ fontWeight: '500' }}>Mar 2025 - Present</span></h5>
+                            <div className="date">
+                                <span>Mar 2025 - Present</span>
+                            </div>
                         </div>
+                        <h5>Mulai</h5>
                     </motion.div>
 
                     <motion.div className="exp-content">
@@ -125,7 +128,7 @@ export const Profile = () => {
                         </ul>
                     </motion.div>
                 </motion.div>
-            </motion.div> */}
+            </motion.div>
 
         </motion.section>
     );

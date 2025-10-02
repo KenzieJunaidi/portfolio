@@ -33,7 +33,7 @@ export const Landing = () => {
                         Aspiring AI Engineer
                     </motion.h2>
                     <motion.p className="description">
-                        I'm a Computer Science student specializing in Intelligent Systems, actively learning to become a future software engineer with a strong foundation in AI. Passionate about solving real-world problems with smart technologies, I'm building skills in ML, programming, and system design—one fun and sometimes chaotic project at a time.
+                        I'm a Computer Science student specializing in Intelligent Systems, preparing for <span style={{ color: 'var(--accent-color)' }}>AI/ML and data-driven roles</span>. Passionate about solving real-world problems with smart technologies, I'm developing skills in machine learning, deep learning, data analytics, and system design—one chaotic project at a time.
                     </motion.p>
 
                     <motion.div className="my-buttons" variants={staggerContainer}>

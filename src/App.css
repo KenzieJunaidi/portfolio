@@ -879,25 +879,36 @@ body {
   padding: 1rem 2rem;
   max-width: 900px;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-wrapper {
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .exp-header h3 {
   font-size: 1.4rem;
+  color: var(--accent-color);
 }
 
 .exp-header h5 {
   font-weight: 500;
-  font-size: 1rem;
-  color: var(--fade-text);
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--milky-white);
+  margin-bottom: 0.5rem;
 }
 
 .date {
-  display: inline-block;
-  background-color: var(--fade-text);
+  padding: 0.1rem 0.4rem;
+  background-color: var(--text-color);
+  border-radius: 5px;
+  border: 1px solid var(--card-border);
 
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: black;
 }
 
@@ -908,8 +919,9 @@ body {
 .exp-list {
   list-style-type: disc;
   padding-left: 1.5rem;
+  color: var(--fade-text);
 }
 
 .exp-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
