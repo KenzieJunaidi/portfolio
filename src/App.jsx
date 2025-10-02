@@ -41,7 +41,7 @@ function App() {
     else{
       setIsLoaded(true);
     }
-  }, []);
+  }, [location]);
 
   useEffect(() => {
     emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useEffect } from 'react';
 
 const FadeInUp = {
     initial: {opacity: 0, y: 20},
@@ -15,6 +16,11 @@ const staggerContainer = {
 };
 
 export const Profile = () => {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" }); 
+    }, []);
+
     return (
         <motion.section id="profile" className="profile" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.8, delay: 0.2}}>
             <motion.div className="header-container" style={{ marginTop: '10rem' }} variants={FadeInUp} initial="initial" whileInView="animate" viewport={{once: true}}>
