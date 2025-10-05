@@ -130,6 +130,66 @@ export const Profile = () => {
                 </motion.div>
             </motion.div>
 
+            <motion.div className="experience-container">
+                <motion.div className="exp">
+                    <motion.div className="exp-header">
+                        <div className="header-wrapper">
+                            <h3>Secretary of LDK-CP</h3>
+                            <div className="date">
+                                <span>Apr 2025 - Jun 2025</span>
+                            </div>
+                        </div>
+                        <h5>HIMTI BINUS University</h5>
+                    </motion.div>
+
+                    <motion.div className="exp-content">
+                        <ul className="exp-list">
+                            <li>Managed and led a team of 35 committee candidates, coordinating tasks, and ensuring smooth preparation.</li>
+                            <li>Oversaw proposals and documentation to support candidate development activities.</li>
+                        </ul>
+                    </motion.div>
+
+                    <div className="space"></div>
+
+                    <motion.div className="exp-header">
+                        <div className="header-wrapper">
+                            <h3>Secretary of LDK-P</h3>
+                            <div className="date">
+                                <span>Dec 2024 - Feb 2025</span>
+                            </div>
+                        </div>
+                        <h5>HIMTI BINUS University</h5>
+                    </motion.div>
+
+                    <motion.div className="exp-content">
+                        <ul className="exp-list">
+                            <li>Coordinated participation for 500+ new organization members in their first training program as activists.</li>
+                            <li>Handled documentation and event flow to ensure a smooth and impactful onboarding experience.</li>
+                        </ul>
+                    </motion.div>
+
+                    <div className="space"></div>
+
+                    <motion.div className="exp-header">
+                        <div className="header-wrapper">
+                            <h3>Vice Coordinator of Sponsorship, TECHNO 2024</h3>
+                            <div className="date">
+                                <span>May 2024 - Sep 2024</span>
+                            </div>
+                        </div>
+                        <h5>HIMTI BINUS University</h5>
+                    </motion.div>
+
+                    <motion.div className="exp-content">
+                        <ul className="exp-list">
+                            <li>Led a 10-person internal fundraising team and successfully raised IDR 11 million to support TECHNO 2024, an event attended by 600 freshmen from the School of Computer Science.</li>
+                            <li>Collaborated with the Sponsorship Coordinator to align internal and external funding strategies.</li>
+                        </ul>
+                    </motion.div>
+                </motion.div>
+                
+            </motion.div>
+
         </motion.section>
     );
 }

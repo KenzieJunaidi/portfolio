@@ -78,6 +78,15 @@ export const Projects = () => {
             link_url: "https://github.com/KenzieJunaidi/skinguard",
             description: "SkinGuard is an AI-powered application that uses ResNet to detect and classify skin diseases from images. Leveraging a curated skin disease image dataset from Kaggle, it provides accurate and efficient analysis to assist in early diagnosis and skin health monitoring.",
             tech: ["React", "JavaScript", "Flask API", "Python", "ResNet101"],
+        },
+        {
+            id: 6,
+            filter: "WIP",
+            title: "Carpe",
+            img_url: "/projects/carpe.png",
+            link_url: "https://github.com/KenzieJunaidi/",
+            description: "Discover, collect, and relive your travels in a way that makes every trip feel like part of a bigger adventure.",
+            tech: ["React Native", "JavaScript", "Python"],
         }
     ];
 

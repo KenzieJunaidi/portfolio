@@ -711,7 +711,7 @@ body {
   max-width: 80%; 
   flex-shrink: 0;  
   flex-grow: 0;  
-  margin: 0 auto; 
+  margin: 0 auto 2rem auto;
   background-color: var(--background);
   
   position: relative;
@@ -878,7 +878,6 @@ body {
   border-radius: 10px;
   padding: 1rem 2rem;
   max-width: 900px;
-  margin-bottom: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -891,7 +890,18 @@ body {
 
 .exp-header h3 {
   font-size: 1.4rem;
-  color: var(--accent-color);
+  font-weight: 500;
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    #a7d8ff 0%,
+    #4da6ff 50%,
+    #57aac2 100% 
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  color: transparent;
 }
 
 .exp-header h5 {
@@ -924,4 +934,9 @@ body {
 
 .exp-list li {
   margin-bottom: 0.8rem;
+}
+
+.space {
+  height: 1rem;
+  width: 100%;
 }
