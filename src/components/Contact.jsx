@@ -105,10 +105,10 @@ export const Contact = () => {
 
             <motion.div className="contact-content" variants={FadeInUp}>
                 <motion.form className="contact-form" onSubmit={handleSubmit}>
-                    <motion.input type="text" name="name" placeholder="Your Name. . ." required whileFocus={{scale:1.02}} onChange={handleInputChange}>
+                    <motion.input type="text" name="name" placeholder="Your Name. . ." required autocomplete="off" whileFocus={{scale:1.02}} onChange={handleInputChange}>
 
                     </motion.input>
-                    <motion.input type="email" name="email" placeholder="Your Email. . ." required whileFocus={{scale:1.02}} onChange={handleInputChange}>
+                    <motion.input type="email" name="email" placeholder="Your Email. . ." required autocomplete="off" whileFocus={{scale:1.02}} onChange={handleInputChange}>
 
                     </motion.input>
                     <motion.textarea name="message" placeholder="Your Message" required whileFocus={{scale:1.02}} onChange={handleInputChange}>
