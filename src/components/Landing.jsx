@@ -64,7 +64,7 @@ export const Landing = () => {
         stack: {
             languages: ["Python", "JavaScript", "C", "HTML", "CSS"],
             frameworks: ["React", "TensorFlow", "PyTorch", "Flask"],
-            tools: ["VS Code", "Github", "Google Colab"]
+            tools: ["VS Code", "Github", "Google Colab", "Figma"]
         },
         traits: [
             "Proactive",
